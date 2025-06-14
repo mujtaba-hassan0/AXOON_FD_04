@@ -1,0 +1,125 @@
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      padding: 30px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: space-between;
+    }
+
+    .contact-form,
+    .contact-info {
+      flex: 1 1 400px;
+    }
+
+    .contact-form h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .contact-form p {
+      margin-bottom: 20px;
+      font-size: 15px;
+      color: #333;
+    }
+
+    .form-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .form-group #phone{
+    width: 200px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      flex: 1 1 48%;
+      padding: 10px;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+   .form-group input:hover,textarea:hover{
+   border: 1.5px solid black;
+    border-radius: 5px;
+   }
+   .form-group input:focus{
+    color:transparent;
+    
+   }
+
+
+    .form-group textarea {
+      width: 100%;
+      height: 100px;
+      resize: vertical;
+    }
+
+    .submit-btn {
+      background-color: #e63900;
+      color: white;
+      border: none;
+      padding: 12px 30px;
+      font-size: 15px;
+      cursor: pointer;
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .submit-btn:hover{
+          background-color: #bd3001;
+    }
+    .contact-info img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+      border-radius: 4px;
+    }
+    .contact-description{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .contact-entry {
+      margin-bottom: 15px;
+      width: 45%;
+      /* display: flex;
+      flex-direction: column;
+      flex-wrap: wrap; */
+    }
+
+    .contact-entry span {
+      display: block;
+      color: #222;
+      margin-bottom: 5px;
+    }
+
+    .contact-entry a {
+      color: #c55;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      .form-group input {
+        flex: 1 1 100%;
+      }
+    }
+
+    @media screen and (max-width:610px) {
+        .contact-description{
+            flex-direction: column;
+        }
+    }
+
